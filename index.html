@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------- remixicons ---------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Chisom Weds Stanley 2025 - Home</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+
+<body class="scroll-smooth">
+    <header class="fixed w-full md:w-1/2 right-0 z-10 bg-yellow-50 shadow-sm">
+        <div class="container md:mr-0 mx-auto py-4">
+            <nav class="font-josefin text-yellow-950">
+                <ul class="flex justify-evenly">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rsvp-section">RSVP</a></li>
+                    <li><a href="#event-details-section">Event Details</a></li>
+                    <li><a href="#thank-you-page">Thank You</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="h-screen flex flex-col md:flex-row">
+        <!-- fixed hero image: desktop -->
+        <section
+            class="hidden md:flex md:fixed md:left-0 h-full bg-[url('./images/image-1.jpg')] bg-cover bg-center md:w-1/2 items-center justify-center">
+
+        </section>
+        <!-- content section -->
+        <section class="md:fixed right-0 md:w-1/2 bg-yellow-50 h-screen overflow-y-auto">
+            <!-- fixed hero imge: mobile -->
+            <img src="./images/image-1.jpg" alt="" class="md:hidden h-2/3 w-full object-cover">
+            <!-- introductory section -->
+            <section class="text-center" id="home">
+                <div class="container mx-auto pt-20 lg:pt-32 pb-20">
+                    <!-- hero logo, admin login btn  -->
+                    <img src="./images/Wedding-Logo.png" alt="" class="w-3/4 lg:w-2/3 mx-auto mb-10" id="admin-btn">
+
+                    <div class="container mx-auto font-josefin text-yellow-950">
+                        <!-- <p class="text-3xl mb-6 w-3/4 lg:w-2/3 mx-auto">Saturday April 26th, 2025</p> -->
+                        <!-- countdown -->
+                        <div id="countdown"
+                            class="w-3/4 lg:w-2/3 mx-auto text-center flex flex-col items-center justify-between border border-yellow-950 p-4">
+
+                            <div class="w-full p-4">
+                                <div class="flex justify-center gap-5  lg:text-xl mb-4">
+                                    <div class="countdown-item">
+                                        <span id="month" class="">00</span>
+                                        <p>Months</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="days" class="">00</span>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="hours" class="">00</span>
+                                        <p>Hrs</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="minutes" class="">00</span>
+                                        <p>Mins</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span id="seconds" class="">00</span>
+                                        <p>Secs</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p>left to the big day!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- RSVP section -->
+            <section class="bg-yellow-950" id="rsvp-section">
+                <div class="container mx-auto py-20">
+                    <div class="text-center mb-12 font-josefin">
+                        <h2 class="text-4xl text-yellow-100 mb-4">RSVP</h2>
+                        <p class="text-yellow-100 underline">Note: RSVP closes by April 10th, 2025</p>
+
+                    </div>
+                    <!-- RSVP Query -->
+                    <div class="bg-yellow-100 w-max mx-auto p-6 rounded text-center mb-20">
+                        <p class="font-sacramento text-2xl mb-4 font-semibold text-yellow-900">Will You Be Attending?
+                        </p>
+                        <div class="flex flex-col lg:flex-row justify-center gap-5 font-josefin">
+                            <button
+                                class="accept-btn bg-yellow-50 text-yellow-900 px-4 py-2 rounded shadow font-semibold">Joyfully
+                                Accept</button>
+                            <button
+                                class="bg-yellow-50 text-yellow-900 px-4 py-2 rounded shadow font-semibold">Regrettably
+                                Decline</button>
+                        </div>
+                    </div>
+
+                    <!-- Notice -->
+                    <div
+                        class="w-3/4 lg:w-2/3 mx-auto font-josefin text-center text-yellow-100 border border-yellow-100 p-4">
+                        <h3 class="text-center mb-6">IMPORTANT!</h3>
+
+                        <p> A Guest list based on your filled info will be strictly adhered to, and used to control
+                            access on the wedding day. Kindly keep the link private as the celebrants would love to have
+                            only their closest and dearest present. They would personally share the link with their
+                            loved ones as they deem fit and would vet all names registered to filter out any uninvited
+                            individuals.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Event details -->
+            <section id="event-details-section">
+                <div class="container mx-auto py-20">
+                    <div class="text-center mb-12 font-josefin text-yellow-950">
+                        <h2 class="text-4xl mb-4">Wedding Details</h2>
+                        <p class="text-yellow-800 mb-8 w-2/3 mx-auto">Get the full details of our wedding ceremony and
+                            reception.
+                            Download the
+                            invitation card</p>
+                    </div>
+                    <a href="./images/invitation-card.pdf" download="./images/invitation-card.pdf"
+                        class="block font-semibold w-max mx-auto bg-yellow-950 text-yellow-100 text-xl text-center px-4 rounded py-2 shadow-md">
+                        DOWNLOAD WEDDING IV <i class="ri-download-line"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- thank you page -->
+            <section class="bg-yellow-950 font-josefin" id="thank-you-page">
+                <div class="relative container mx-auto py-20">
+                    <p class="w-3/4 lg:w-2/3 mx-auto text-yellow-100">Dear Friends and Family, We are deeply grateful
+                        for your love and support as we begin this
+                        exciting new chapter in our lives. Your presence or good intentions even in your understandable
+                        absence, mean the world to us and has filled our hearts with joy.
+                        <br>
+                        <br>
+                        Thank you for choosing to celebrate this special day with us and for the cherished memories
+                        we’ll create together. We feel so lucky to have such amazing people surrounding us as we embark
+                        on this journey as a married couple.
+                        <br>
+                        <br>
+                        With all our love and gratitude,
+                        <br>
+                        <br>
+                        - <span class="text-3xl font-sacramento font-bold">Chisom and Stanley</span>
+                    </p>
+
+                    <img src="./images/vecteezy_gold-gliter-flower-and-leaf_10234894.png" alt=""
+                        class="absolute bottom-0 right-20 transform rotate-45 w-24 z-10">
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <!-- RSVP Modal -->
+    <div id="rsvp-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-20 flex justify-center items-center px-4">
+        <div class="relative bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+            <button id="close-modal"
+                class="absolute top-2 right-2 text-yellow-100 hover:text-yellow-600 text-xl bg-yellow-800 px-2 rounded">
+                <i class="ri-close-line"></i>
+            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-yellow-800 text-center">RSVP Details</h2>
+            <form id="rsvp-form" class="space-y-4">
+                <!-- First Name -->
+                <div>
+                    <label for="first-name" class="block text-sm font-medium text-yellow-900">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required
+                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <!-- Last Name -->
+                <div>
+                    <label for="last-name" class="block text-sm font-medium text-yellow-900">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required
+                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <!-- Preferred Mode of Contact -->
+                <div>
+                    <span class="block text-sm font-medium text-yellow-900 mb-2">Preferred Mode of Contact</span>
+                    <div class="flex items-center space-x-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="contact-method" value="email" required class="mr-2">
+                            Email
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="contact-method" value="whatsapp" required class="mr-2">
+                            WhatsApp
+                        </label>
+                    </div>
+                </div>
+                <!-- Dynamic Contact Input -->
+                <div id="contact-input" class="hidden">
+                    <label for="contact-detail" id="contact-label"
+                        class="block text-sm font-medium text-yellow-900"></label>
+                    <input type="text" id="contact-detail" name="contact-detail" required
+                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <!-- Song Request -->
+                <div>
+                    <label for="song-request" class="block text-sm font-medium text-yellow-900">Do you have any song
+                        request?</label>
+                    <input type="text" id="song-request" name="song-request" placeholder="Song Title - Artist Name"
+                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="bg-yellow-800 text-white px-6 py-2 rounded shadow hover:bg-yellow-700">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div id="qr-code-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-3/4 max-w-lg relative">
+            <!-- Close Button -->
+            <button id="close-qr-modal"
+                class="absolute top-2 right-2 text-yellow-100 hover:text-yellow-600 text-xl bg-yellow-800 px-2 rounded">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <!-- Modal Content -->
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Your Access Pass</h2>
+
+            <!-- Thank You Message -->
+            <div id="thank-you-message" class="text-lg text-gray-800 mb-4"></div>
+
+            <!-- Info Message -->
+            <div id="info-message" class="text-sm text-green-600 mb-6"></div>
+
+            <!-- QR Code -->
+            <div id="qrcode" class="flex justify-center mb-6"></div>
+
+            <!-- Instructions Message -->
+            <p class="text-sm text-red-600 text-center">Please take a screenshot of this pass for your entry at the
+                venue. The QR code will be scanned for access.</p>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 hidden">
+        <div class="bg-yellow-300 p-8 rounded-lg shadow-lg w-11/12 max-w-lg relative">
+            <!-- Close Button -->
+            <button id="close-admin-modal" class="absolute top-4 right-4 text-[#5c222a] hover:text-gray-800 text-2xl">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <!-- Modal Content -->
+            <h2 class="text-2xl font-bold text-[#5c222a] mb-4">Admin Login</h2>
+            <form id="admin-form" class="space-y-4">
+                <!-- Username or Email -->
+                <div>
+                    <label for="admin-username" class="block text-sm text-[#5c222a]">Username or Email</label>
+                    <input type="text" id="admin-username" name="admin-username"
+                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-yellow-300" required>
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="admin-password" class="block text-sm text-[#5c222a]">Password</label>
+                    <input type="password" id="admin-password" name="admin-password"
+                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-yellow-300" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-[#5c222a] text-yellow-100 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+        import { getDocs } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAaQC8eA6mbfaFjuTUhjlSuXGgTQYYQpFs",
+            authDomain: "chisomxstan.firebaseapp.com",
+            projectId: "chisomxstan",
+            storageBucket: "chisomxstan.firebasestorage.app",
+            messagingSenderId: "570220228870",
+            appId: "1:570220228870:web:568c5eaadf45417b2d6e87",
+            measurementId: "G-SZ4S6B7SHV"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+        const rsvpCollection = collection(db, "rsvps");
+    </script>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
