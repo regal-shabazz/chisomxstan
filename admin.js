@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <td class="border border-yellow-900 px-4 py-2 text-xs font-bold">${guest.firstName} ${guest.lastName}</td>
                 <td class="hidden md:table-cell border border-yellow-900 px-4 py-2 text-xs"><span class="${guest.contactMethod === 'whatsapp' ? 'bg-green-700' : 'bg-red-600'} text-white p-1 rounded">${guest.contactMethod}</span> : <span class="font-semibold">${guest.contactDetail}</span></td>
                 <td class="hidden md:table-cell border border-yellow-900 px-4 py-2">${guest.songRequest || "N/A"}</td>
-                <td class="border border-yellow-900 px-4 py-2 flex justify-around">
+                <td class=" px-4 py-2 flex justify-around">
                     <button class="delete-btn bg-red-600 text-white px-2 py-1 rounded text-xs" data-id="${guest.id}">
                         Delete
                     </button>

@@ -134,19 +134,19 @@ rsvpForm.addEventListener('submit', async (e) => {
   const contactDetail = document.getElementById('contact-detail').value.trim();
   const songRequest = document.getElementById('song-request').value.trim()
 
-   // Prepare data object
-   const rsvpData = {
+  // Prepare data object
+  const rsvpData = {
     firstName,
     lastName,
     contactMethod,
     contactDetail,
     songRequest,
     timestamp: new Date().toISOString(),
-};
+  };
 
   try {
-     // Save RSVP data to Firestore
-     await addDoc(collection(db, "rsvps"), rsvpData);
+    // Save RSVP data to Firestore
+    await addDoc(collection(db, "rsvps"), rsvpData);
 
     // Construct QR code URL
     const qrData = `RSVP Details
@@ -197,18 +197,34 @@ closeQrModal.addEventListener('click', () => {
   qrModal.classList.add('hidden');
 });
 
+//decline modal
+const declineModal = document.getElementById('decline-modal')
+const closeDeclineModal = document.getElementById('close-decline-modal')
+const declineBtn = document.querySelector('.decline-btn')
+
+// Open Decline Modal
+declineBtn.addEventListener('click', () => {
+  declineModal.classList.remove('hidden');
+});
+// Close Decline Modal
+closeDeclineModal.addEventListener('click', () => {
+  declineModal.classList.add('hidden');
+});
 
 // Admin Login
-const adminBtn = document.getElementById('admin-btn'); // Admin button
+const adminBtn = document.querySelectorAll('.admin-btn'); // Admin button
 const adminModal = document.getElementById('admin-modal');
 const closeAdminModal = document.getElementById('close-admin-modal');
 const adminForm = document.getElementById('admin-form');
 
 // Show Admin Modal
-adminBtn.addEventListener('dblclick', (e) => {
-  e.preventDefault(); // Prevent default link behavior
-  adminModal.classList.remove('hidden');
-});
+adminBtn.forEach(btn => {
+  btn.addEventListener('dblclick', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    adminModal.classList.remove('hidden');
+  });
+})
+
 
 // Close Admin Modal
 closeAdminModal.addEventListener('click', () => {

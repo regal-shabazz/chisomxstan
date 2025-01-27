@@ -13,9 +13,9 @@
 </head>
 
 <body class="scroll-smooth">
-    <header class="fixed w-full md:w-1/2 right-0 z-10 bg-yellow-50 shadow-sm">
+    <header class="fixed w-full md:w-1/2 right-0 z-10 bg-white shadow-sm">
         <div class="container md:mr-0 mx-auto py-4">
-            <nav class="font-josefin text-yellow-950">
+            <nav class="font-josefin text-[#531212]">
                 <ul class="flex justify-evenly">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#rsvp-section">RSVP</a></li>
@@ -28,24 +28,25 @@
     <main class="h-screen flex flex-col md:flex-row">
         <!-- fixed hero image: desktop -->
         <section
-            class="hidden md:flex md:fixed md:left-0 h-full bg-[url('./images/image-1.jpg')] bg-cover bg-center md:w-1/2 items-center justify-center">
-
+            class="hidden md:flex md:fixed md:left-0 h-full  bg-cover bg-center md:w-1/2 items-center justify-center">
+            <img src="./images/Wedding-Logo.png" alt="" class="admin-btn w-3/4 lg:w-2/3 mx-auto mb-10" id="admin-btn">
         </section>
         <!-- content section -->
-        <section class="md:fixed right-0 md:w-1/2 bg-yellow-50 h-screen overflow-y-auto">
+        <section class="md:fixed right-0 md:w-1/2 bg-white h-screen overflow-y-auto">
             <!-- fixed hero imge: mobile -->
-            <img src="./images/image-1.jpg" alt="" class="md:hidden h-2/3 w-full object-cover">
+            <img src="./images/image-1.jpg" alt="" class="hidden md:hidden h-2/3 w-full object-cover">
+            <img src="./images/Wedding-Logo.png" alt="" class="admin-btn mt-28 md:hidden w-2/3 mx-auto object-cover" id="admin-btn">
             <!-- introductory section -->
             <section class="text-center" id="home">
                 <div class="container mx-auto pt-20 lg:pt-32 pb-20">
                     <!-- hero logo, admin login btn  -->
-                    <img src="./images/Wedding-Logo.png" alt="" class="w-3/4 lg:w-2/3 mx-auto mb-10" id="admin-btn">
+                    <img src="./images/Wedding-Logo.png" alt="" class="hidden w-3/4 lg:w-2/3 mx-auto mb-10" id="admin-btn">
 
-                    <div class="container mx-auto font-josefin text-yellow-950">
+                    <div class="container mx-auto font-josefin text-[#531212]">
                         <!-- <p class="text-3xl mb-6 w-3/4 lg:w-2/3 mx-auto">Saturday April 26th, 2025</p> -->
                         <!-- countdown -->
                         <div id="countdown"
-                            class="w-3/4 lg:w-2/3 mx-auto text-center flex flex-col items-center justify-between border border-yellow-950 p-4">
+                            class="w-3/4 lg:w-2/3 mx-auto text-center flex flex-col items-center justify-between border border-[#531212] p-4">
 
                             <div class="w-full p-4">
                                 <div class="flex justify-center gap-5  lg:text-xl mb-4">
@@ -79,30 +80,30 @@
                     </div>
             </section>
             <!-- RSVP section -->
-            <section class="bg-yellow-950" id="rsvp-section">
+            <section class="bg-[#531212]" id="rsvp-section">
                 <div class="container mx-auto py-20">
                     <div class="text-center mb-12 font-josefin">
-                        <h2 class="text-4xl text-yellow-100 mb-4">RSVP</h2>
-                        <p class="text-yellow-100 underline">Note: RSVP closes by April 10th, 2025</p>
+                        <h2 class="text-4xl text-white mb-4">RSVP</h2>
+                        <!-- <p class="text-white underline">Note: RSVP closes by April 10th, 2025</p> -->
 
                     </div>
                     <!-- RSVP Query -->
-                    <div class="bg-yellow-100 w-max mx-auto p-6 rounded text-center mb-20">
-                        <p class="font-sacramento text-2xl mb-4 font-semibold text-yellow-900">Will You Be Attending?
+                    <div class="bg-white w-max mx-auto p-6 rounded text-center mb-20">
+                        <p class="font-sacramento text-2xl mb-4 font-semibold text-[#531212]">Will You Be Attending?
                         </p>
                         <div class="flex flex-col lg:flex-row justify-center gap-5 font-josefin">
                             <button
-                                class="accept-btn bg-yellow-50 text-yellow-900 px-4 py-2 rounded shadow font-semibold">Joyfully
+                                class="accept-btn text-white bg-[#531212] px-4 py-2 rounded shadow font-semibold">Joyfully
                                 Accept</button>
                             <button
-                                class="bg-yellow-50 text-yellow-900 px-4 py-2 rounded shadow font-semibold">Regrettably
+                                class="decline-btn text-white bg-[#531212] px-4 py-2 rounded shadow font-semibold">Regrettably
                                 Decline</button>
                         </div>
                     </div>
 
                     <!-- Notice -->
                     <div
-                        class="w-3/4 lg:w-2/3 mx-auto font-josefin text-center text-yellow-100 border border-yellow-100 p-4">
+                        class="w-3/4 lg:w-2/3 mx-auto font-josefin text-center text-white border border-white p-4">
                         <h3 class="text-center mb-6">IMPORTANT!</h3>
 
                         <p> A Guest list based on your filled info will be strictly adhered to, and used to control
@@ -117,23 +118,23 @@
             <!-- Event details -->
             <section id="event-details-section">
                 <div class="container mx-auto py-20">
-                    <div class="text-center mb-12 font-josefin text-yellow-950">
+                    <div class="text-center mb-12 font-josefin text-[#531212]">
                         <h2 class="text-4xl mb-4">Wedding Details</h2>
-                        <p class="text-yellow-800 mb-8 w-2/3 mx-auto">Get the full details of our wedding ceremony and
+                        <p class="text-[#531212] mb-8 w-2/3 mx-auto">Get the full details of our wedding ceremony and
                             reception.
                             Download the
                             invitation card</p>
                     </div>
                     <a href="./images/invitation-card.pdf" download="./images/invitation-card.pdf"
-                        class="block font-semibold w-max mx-auto bg-yellow-950 text-yellow-100 text-xl text-center px-4 rounded py-2 shadow-md">
+                        class="block font-semibold w-max mx-auto bg-[#531212] text-white text-xl text-center px-4 rounded py-2 shadow-md">
                         DOWNLOAD WEDDING IV <i class="ri-download-line"></i>
                     </a>
                 </div>
             </section>
             <!-- thank you page -->
-            <section class="bg-yellow-950 font-josefin" id="thank-you-page">
+            <section class="bg-[#531212] font-josefin" id="thank-you-page">
                 <div class="relative container mx-auto py-20">
-                    <p class="w-3/4 lg:w-2/3 mx-auto text-yellow-100">Dear Friends and Family, We are deeply grateful
+                    <p class="w-3/4 lg:w-2/3 mx-auto text-white">Dear Friends and Family, We are deeply grateful
                         for your love and support as we begin this
                         exciting new chapter in our lives. Your presence or good intentions even in your understandable
                         absence, mean the world to us and has filled our hearts with joy.
@@ -162,26 +163,26 @@
     <div id="rsvp-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-20 flex justify-center items-center px-4">
         <div class="relative bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
             <button id="close-modal"
-                class="absolute top-2 right-2 text-yellow-100 hover:text-yellow-600 text-xl bg-yellow-800 px-2 rounded">
+                class="absolute top-2 right-2 text-white text-xl bg-[#531212] px-2 rounded">
                 <i class="ri-close-line"></i>
             </button>
-            <h2 class="text-2xl font-semibold mb-4 text-yellow-800 text-center">RSVP Details</h2>
+            <h2 class="text-2xl font-semibold mb-4 text-[#531212] text-center">RSVP Details</h2>
             <form id="rsvp-form" class="space-y-4">
                 <!-- First Name -->
                 <div>
-                    <label for="first-name" class="block text-sm font-medium text-yellow-900">First Name</label>
+                    <label for="first-name" class="block text-sm font-medium text-[#531212]">First Name</label>
                     <input type="text" id="first-name" name="first-name" required
-                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        class="w-full border border-[#531212] rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#531212]">
                 </div>
                 <!-- Last Name -->
                 <div>
-                    <label for="last-name" class="block text-sm font-medium text-yellow-900">Last Name</label>
+                    <label for="last-name" class="block text-sm font-medium text-[#531212]">Last Name</label>
                     <input type="text" id="last-name" name="last-name" required
-                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        class="w-full border border-[#531212] rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#531212]">
                 </div>
                 <!-- Preferred Mode of Contact -->
                 <div>
-                    <span class="block text-sm font-medium text-yellow-900 mb-2">Preferred Mode of Contact</span>
+                    <span class="block text-sm font-medium text-[#531212] mb-2">Preferred Mode of Contact</span>
                     <div class="flex items-center space-x-4">
                         <label class="flex items-center">
                             <input type="radio" name="contact-method" value="email" required class="mr-2">
@@ -196,24 +197,40 @@
                 <!-- Dynamic Contact Input -->
                 <div id="contact-input" class="hidden">
                     <label for="contact-detail" id="contact-label"
-                        class="block text-sm font-medium text-yellow-900"></label>
+                        class="block text-sm font-medium text-[#531212]"></label>
                     <input type="text" id="contact-detail" name="contact-detail" required
-                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        class="w-full border border-[#531212] rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#531212]">
                 </div>
                 <!-- Song Request -->
                 <div>
-                    <label for="song-request" class="block text-sm font-medium text-yellow-900">Do you have any song
+                    <label for="song-request" class="block text-sm font-medium text-[#531212]">Do you have any song
                         request?</label>
                     <input type="text" id="song-request" name="song-request" placeholder="Song Title - Artist Name"
-                        class="w-full border border-yellow-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        class="w-full border border-[#531212] rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#531212]">
                 </div>
                 <!-- Submit Button -->
                 <div class="text-center">
-                    <button type="submit" class="bg-yellow-800 text-white px-6 py-2 rounded shadow hover:bg-yellow-700">
+                    <button type="submit" class="bg-[#531212] text-white px-6 py-2 rounded shadow hover:bg-[#531212]">
                         Submit
                     </button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- Decline Modal -->
+    <div id="decline-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-20 flex justify-center items-center px-4">
+        <div class="relative bg-[#531212] rounded-lg shadow-lg p-8 max-w-md w-full">
+            <button id="close-decline-modal"
+                class="absolute top-2 right-2 text-white text-xl bg-[#531212] px-2 rounded">
+                <i class="ri-close-line"></i>
+            </button>
+            <h2 class="text-2xl font-semibold mb-4 text-white text-center">RSVP Details</h2>
+            <p class="w-3/4 lg:w-2/3 mx-auto text-white">We're truly sorry you can't join us on our special day, but we understand and appreciate your love and support from afar. You'll be in our thoughts as we celebrate this beautiful chapter, and we hope to share more wonderful moments with you in the future. Sending you all our love!
+                <br>
+                <br>
+                - <span class="text-3xl font-sacramento font-bold">Chisom and Stanley</span>
+            </p>
         </div>
     </div>
 
@@ -222,7 +239,7 @@
         <div class="bg-white p-8 rounded-lg shadow-lg w-3/4 max-w-lg relative">
             <!-- Close Button -->
             <button id="close-qr-modal"
-                class="absolute top-2 right-2 text-yellow-100 hover:text-yellow-600 text-xl bg-yellow-800 px-2 rounded">
+                class="absolute top-2 right-2 text-white hover:text-[#531212] text-xl bg-[#531212] px-2 rounded">
                 <i class="ri-close-line"></i>
             </button>
 
@@ -246,33 +263,33 @@
 
     <!-- Admin Login Modal -->
     <div id="admin-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 hidden">
-        <div class="bg-yellow-300 p-8 rounded-lg shadow-lg w-11/12 max-w-lg relative">
+        <div class="bg-[#531212] p-8 rounded-lg shadow-lg w-11/12 max-w-lg relative">
             <!-- Close Button -->
-            <button id="close-admin-modal" class="absolute top-4 right-4 text-[#5c222a] hover:text-gray-800 text-2xl">
+            <button id="close-admin-modal" class="absolute top-4 right-4 text-white hover:text-gray-800 text-2xl">
                 <i class="ri-close-line"></i>
             </button>
 
             <!-- Modal Content -->
-            <h2 class="text-2xl font-bold text-[#5c222a] mb-4">Admin Login</h2>
+            <h2 class="text-2xl font-bold text-white mb-4">Admin Login</h2>
             <form id="admin-form" class="space-y-4">
                 <!-- Username or Email -->
                 <div>
-                    <label for="admin-username" class="block text-sm text-[#5c222a]">Username or Email</label>
+                    <label for="admin-username" class="block text-sm text-white">Username or Email</label>
                     <input type="text" id="admin-username" name="admin-username"
-                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-yellow-300" required>
+                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-[#531212]" required>
                 </div>
 
                 <!-- Password -->
                 <div>
-                    <label for="admin-password" class="block text-sm text-[#5c222a]">Password</label>
+                    <label for="admin-password" class="block text-sm text-white">Password</label>
                     <input type="password" id="admin-password" name="admin-password"
-                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-yellow-300" required>
+                        class="w-full border border-gray-300 p-2 rounded-lg focus:ring focus:ring-[#531212]" required>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit"
-                        class="bg-[#5c222a] text-yellow-100 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+                        class="bg-[#531212] border border-white text-white px-6 py-2 rounded-lg font-semibold hover:border-red-400"> 
                         Login
                     </button>
                 </div>
