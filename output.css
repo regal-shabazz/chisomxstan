@@ -891,35 +891,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-yellow-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-950{
-  --tw-bg-opacity: 1;
-  background-color: rgb(66 32 6 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[3\]{
-  background-color: 3;
+.bg-\[\]{
+  background-color: ;
 }
 
 .bg-\[\#\]{
   background-color: #;
 }
 
-.bg-\[\]{
-  background-color: ;
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
+}
+
+.bg-\[url\(\'\.\/images\/hero-cover\.jpg\'\)\]{
+  background-image: url('./images/hero-cover.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/hero\'\)\]{
+  background-image: url('./images/hero');
 }
 
 .bg-cover{
@@ -1082,32 +1071,9 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 
-.text-red-900{
-  --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity, 1));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-yellow-100{
-  --tw-text-opacity: 1;
-  color: rgb(254 249 195 / var(--tw-text-opacity, 1));
-}
-
-.text-yellow-950{
-  --tw-text-opacity: 1;
-  color: rgb(66 32 6 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\]{
-  color: ;
-}
-
-.text-\[\#\]{
-  color: #;
 }
 
 .underline{
