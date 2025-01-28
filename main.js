@@ -127,12 +127,19 @@ const rsvpModal = document.getElementById("rsvp-modal");
 rsvpForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
+  // Get the submit button
+  const submitButton = rsvpForm.querySelector('button[type="submit"]');
+  
+  // Disable the submit button and update its text
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting...";
+
   // Collect form data
   const firstName = document.getElementById('first-name').value.trim();
   const lastName = document.getElementById('last-name').value.trim();
   const contactMethod = document.querySelector('input[name="contact-method"]:checked').value;
   const contactDetail = document.getElementById('contact-detail').value.trim();
-  const songRequest = document.getElementById('song-request').value.trim()
+  const songRequest = document.getElementById('song-request').value.trim();
 
   // Prepare data object
   const rsvpData = {
@@ -148,14 +155,17 @@ rsvpForm.addEventListener('submit', async (e) => {
     // Save RSVP data to Firestore
     await addDoc(collection(db, "rsvps"), rsvpData);
 
-    // Construct QR code URL
+    // Construct pure text QR code data
     const qrData = `RSVP Details
 
-      Name: ${firstName} ${lastName}
-      Contact Method: ${contactMethod}
-      Contact Detail: ${contactDetail}
-      Song Request: ${songRequest}`
-
+Name: ${firstName} ${lastName}
+Contact Method: ${contactMethod}
+Contact Detail: ${contactMethod === "email"
+        ? contactDetail.replace('@', '＠').replace('.', '․')
+        : contactDetail.replace(/(\d{3})(\d{3})(\d{4})/, '$1\u200B-$2\u200B-$3')
+      }
+Song Request: ${songRequest}`;
+    // Generate QR code URL
     const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrData)}`;
 
     // Create Image for QR Code
@@ -172,16 +182,28 @@ rsvpForm.addEventListener('submit', async (e) => {
       qrCodeDiv.innerHTML = '';
       qrCodeDiv.appendChild(qrImage);
 
-      // Display the dynamic messages
+      // Display the thank-you message
       thankYouMessage.innerHTML = `Thank you, ${firstName}! Your RSVP has been successfully recorded.`;
+
+      // Re-enable the submit button and reset text
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit";
     };
     qrImage.onerror = (error) => {
       console.error("Error loading QR code:", error);
       qrCodeDiv.innerHTML = "Error loading QR code. Please try again.";
+
+      // Re-enable the submit button and reset text
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit";
     };
   } catch (error) {
     console.error("Error saving RSVP to Firestore:", error);
     alert("Failed to submit your RSVP. Please try again.");
+
+    // Re-enable the submit button and reset text
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit";
   }
 });
 
